@@ -79,15 +79,17 @@
                                             <div class="marge-input">
                                                 <div class="custom-input-group marge-one no-border">
                                                     <label for="cardNumber" class="no-border">Card Number</label>
-                                                    <img id="cardIcon" src="" alt="" class="img-fluid click-image no-border">
+                                                    <img id="visaIcon" src="./img/visa1.png" alt="" class="d-none img-fluid click-image no-border">
+                                                    <img id="masterIcon" src="./img/mastercard.png" alt="" class="d-none img-fluid click-image no-border">
+                                                    <img id="amexIcon" src="./img/amex1.png" alt="" class="d-none img-fluid click-image no-border">
                                                     <input style="width: 76%" onkeyup="movetoNext(this, 'expireMMDate')" size="20" type="text" maxlength="19" placeholder="0000 0000 0000 0000" id="cardNumber" class="form-control card-main-number no-border" placeholder="" name="cc-number" required title="Please use the numbers only."
                                                         autocomplete="cc-number" value="">
                                                 </div>
                                                 <div id="card_middle" style="display: flex;" class="d-none">
                                                     <div class="custom-input-group marge-two no-border">
                                                         <label for="expireDate" class="no-border">Exp date</label>
-                                                        <select style="color: black" name="cc-exp" id="expireMMDate" maxlength="2" required autocomplete="cc-exp" title="Expiration date." value="MM">
-                                                            <option>00</option>
+                                                        <select style="color: black" name="cc-exp" id="expireMMDate" maxlength="2" required autocomplete="cc-exp" title="Expiration date." value="">
+                                                            <option></option>
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -103,7 +105,7 @@
                                                          </select>
                                                         <div class="mt-2 pt-4" style="color: #ccc; font-size: 12px; padding: 0 10px;">/</div>
                                                         <select placeholder="MM" name="cc-exp" id="expireYYDate" maxlength="2" required autocomplete="cc-exp" title="Expiration date." value="">
-                                                            <option>00</option>
+                                                            <option></option>
                                                             <option>21</option>
                                                             <option>22</option>
                                                             <option>23</option>

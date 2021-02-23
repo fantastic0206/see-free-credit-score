@@ -632,7 +632,12 @@ footer p {
     /* margin: 34px 10px 0px 10px; */
     position: relative;
     top: 34px;
+    margin-left: 10px;
 }
+
+/* .middle-logo img {
+    padding: 10px 0px;
+} */
 
 
 /* progress */
@@ -695,11 +700,6 @@ footer p {
     background-color: #00c851
 }
 
-
-/* .progressBar .active:after {
-  background-color: #4285f4;
-} */
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .progress-circle-bar {
         padding-left: 15%;
@@ -715,8 +715,8 @@ footer p {
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
     .middle-logo img {
-        width: 230px;
+        width: 150px;
     }
 }

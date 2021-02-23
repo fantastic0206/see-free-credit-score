@@ -79,25 +79,28 @@ function movetoNext(current, nextFieldID) {
   }
 
   if (current.value.slice(0, 1) == 4) {
-    document.getElementById("cardIcon").src = "";
-    document.getElementById("cardIcon").src = "./img/visa1.png";
-    document.getElementById("cardIcon").classList.add('cardIcon');
+    document.getElementById("visaIcon").classList.remove("d-none")
+    document.getElementById("visaIcon").classList.add('cardIcon');
   } else if (current.value.slice(0, 1) == 5) {
-    document.getElementById("cardIcon").src = "";
-    document.getElementById("cardIcon").src = "./img/mastercard.png";
-    document.getElementById("cardIcon").classList.add('cardIcon');
+    document.getElementById("masterIcon").classList.remove("d-none");
+    document.getElementById("masterIcon").classList.add('cardIcon');
   } else if (current.value.slice(0, 1) == 3) {
     current.maxLength = 18;
-    document.getElementById("cardIcon").src = "";
-    document.getElementById("cardIcon").src = "./img/amex1.png";
-    document.getElementById("cardIcon").classList.add('cardIcon');
+    document.getElementById("amexIcon").classList.remove("d-none");
+    document.getElementById("amexIcon").classList.add('cardIcon');
 
     document.getElementById("securityCode").placeholder = "0000";
     document.getElementById("securityCode").maxLength = 4;
   } else {
     current.maxLength = 19;
-    document.getElementById("cardIcon").src = "";
-    document.getElementById("cardIcon").classList.remove('cardIcon');
+    document.getElementById("visaIcon").classList.add("d-none");
+    document.getElementById("visaIcon").classList.remove('cardIcon');
+
+    document.getElementById("masterIcon").classList.add("d-none");
+    document.getElementById("masterIcon").classList.remove('cardIcon');
+    
+    document.getElementById("amexIcon").classList.add("d-none");
+    document.getElementById("amexIcon").classList.remove('cardIcon');
 
     document.getElementById("securityCode").placeholder = "000";
     document.getElementById("securityCode").maxLength = 3;
