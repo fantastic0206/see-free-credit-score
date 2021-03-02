@@ -12,7 +12,11 @@ $("#myBtn").click(function () {
   console.log(inpVal.length);
   if (inpVal.length > 12 && inpVal.length <= 19) {
     // document.getElementById("myBtn").style.background = "grey";
-    document.getElementById("myBtn").disabled = "true";
+    var check_agree = $("#checkbox_agree");
+    console.log(check_agree.is(":checked"));
+    if(check_agree.is(":checked") == true) {
+      document.getElementById("myBtn").disabled = "true";
+    }
   } else {
     margeInp.addClass("error");
     err.toggleClass("d-none");
